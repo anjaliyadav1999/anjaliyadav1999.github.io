@@ -28,33 +28,49 @@ export const ContactUs = () => {
       message: formData.message,
     };
 
-    emailjs
-      .send(
-        contactConfig.YOUR_SERVICE_ID,
-        contactConfig.YOUR_TEMPLATE_ID,
-        templateParams,
-        contactConfig.YOUR_USER_ID
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setFormdata({
-            loading: false,
-            alertmessage: "SUCCESS! ,Thankyou for your messege",
-            variant: "success",
-            show: true,
-          });
-        },
-        (error) => {
-          console.log(error.text);
-          setFormdata({
-            alertmessage: `Faild to send!,${error.text}`,
-            variant: "danger",
-            show: true,
-          });
-          document.getElementsByClassName("co_alert")[0].scrollIntoView();
-        }
-      );
+    if (
+      contactConfig.YOUR_SERVICE_ID &&
+      contactConfig.YOUR_TEMPLATE_ID &&
+      contactConfig.YOUR_USER_ID
+    ) {
+      emailjs
+        .send(
+          contactConfig.YOUR_SERVICE_ID,
+          contactConfig.YOUR_TEMPLATE_ID,
+          templateParams,
+          contactConfig.YOUR_USER_ID
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            setFormdata({
+              loading: false,
+              alertmessage: "SUCCESS! ,Thankyou for your messege",
+              variant: "success",
+              show: true,
+            });
+          },
+          (error) => {
+            console.log(error.text);
+            setFormdata({
+              alertmessage: `Faild to send!,${error.text}`,
+              variant: "danger",
+              show: true,
+            });
+            document.getElementsByClassName("co_alert")[0].scrollIntoView();
+          }
+        );
+    } else {
+      window.location.href = `mailto:${contactConfig.YOUR_EMAIL}?subject=Website%20Contact&body=${encodeURIComponent(
+        formData.message
+      )}`;
+      setFormdata({
+        loading: false,
+        alertmessage: "Opening your email client...",
+        variant: "info",
+        show: true,
+      });
+    }
   };
 
   const handleChange = (e) => {

@@ -23,7 +23,14 @@ export const Portfolio = () => {
           {dataportfolio.map((data, i) => {
             return (
               <div key={i} className="po_item">
-                <img src={data.img} alt="" />
+                <img
+                  src={data.img}
+                  alt="Project screenshot"
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src = "https://picsum.photos/400/300?grayscale";
+                  }}
+                />
                 <div className="content">
                   <p>{data.description}</p>
                   <a href={data.link}>view project</a>

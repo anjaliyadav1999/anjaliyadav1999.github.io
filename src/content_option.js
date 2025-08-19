@@ -1,156 +1,112 @@
-const logotext = "JOHN";
+const logotext = "ANJALI";
 const meta = {
-    title: "John Doe",
-    description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
+    title: "Anjali Podila",
+    description: "Software Engineer | Full-Stack Development | Cloud-Native Applications | Microservices",
 };
 
 const introdata = {
-    title: "I’m John Doe",
+    title: "I’m Anjali Podila",
     animated: {
-        first: "I love coding",
-        second: "I code cool websites",
-        third: "I develop mobile apps",
+        first: "Software Engineer (Full-Stack)",
+        second: "Cloud & Microservices Developer",
+        third: "Machine Learning Enthusiast",
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    description: "I am a Software Engineer with 4+ years of experience in full-stack development, distributed systems, and cloud-native applications. Skilled in Java, Python, JavaScript/TypeScript, and modern frameworks like React.js, Spring Boot, and Node.js, I specialize in building scalable, secure, and resilient enterprise software solutions.",
+    your_img_url: "/headshot.jpg",
 };
 
 const dataabout = {
-    title: "abit about my self",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    title: "A bit about myself",
+    aboutme: "I am passionate about developing innovative software solutions that combine scalability, performance, and user experience. With a strong background in frontend and backend engineering, I have contributed to enterprise-grade systems, cloud migrations, and predictive analytics projects. My expertise spans React, Angular, Spring Boot, Node.js, containerized deployments with Kubernetes, and ML models using TensorFlow and Scikit-learn. I thrive in Agile environments and love collaborating with cross-functional teams to deliver impactful products.",
 };
 const worktimeline = [{
-        jobtitle: "Designer of week",
-        where: "YAdfi",
-        date: "2020",
+        jobtitle: "Software Engineer – Intern",
+        where: "Innosoft Corporation",
+        date: "Jun 2024 – May 2025",
     },
     {
-        jobtitle: "Designer of week",
-        where: "Jamalya",
-        date: "2019",
-    },
-    {
-        jobtitle: "Designer of week",
-        where: "ALquds",
-        date: "2019",
+        jobtitle: "Software Engineer",
+        where: "Quotient Technology",
+        date: "Nov 2020 – Jul 2023",
     },
 ];
 
 const skills = [{
-        name: "Python",
+        name: "Java",
         value: 90,
     },
     {
-        name: "Djano",
+        name: "Python",
         value: 85,
     },
     {
-        name: "Javascript",
+        name: "React.js",
+        value: 85,
+    },
+    {
+        name: "Spring Boot",
         value: 80,
     },
     {
-        name: "React",
-        value: 60,
+        name: "Node.js",
+        value: 80,
     },
     {
-        name: "Jquery",
+        name: "Kubernetes & Docker",
+        value: 80,
+    },
+    {
+        name: "SQL & NoSQL Databases",
         value: 85,
+    },
+    {
+        name: "Machine Learning (TensorFlow, Scikit-learn)",
+        value: 70,
     },
 ];
 
 const services = [{
-        title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Full-Stack Web Development",
+        description: "Building scalable, responsive, and modern applications using React.js, Spring Boot, Node.js, and cloud-native technologies.",
     },
     {
-        title: "Mobile Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Cloud & DevOps Solutions",
+        description: "Designing containerized deployments with Kubernetes, Docker, and CI/CD pipelines to deliver secure and reliable applications.",
     },
     {
-        title: "Wordpress Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Data & Machine Learning",
+        description: "Developing predictive analytics models using TensorFlow and Scikit-learn to power intelligent automation and insights.",
     },
 ];
 
 const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: "/project1.png",
+        description: "Enterprise Subscription Management System – Built with Java, Spring Boot, PostgreSQL, and Docker for automated billing and SaaS user management.",
+        link: "https://github.com/yourhandle/subscription-system",
     },
     {
-        img: "https://picsum.photos/400/800/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/550/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: "/project2.png",
+        description: "E-Commerce Recommendation Engine – A Python/Flask-based engine using Scikit-learn and Redis for real-time product recommendations.",
+        link: "https://github.com/yourhandle/recommendation-engine",
     },
 ];
 
 const contactConfig = {
-    YOUR_EMAIL: "name@domain.com",
-    YOUR_FONE: "(555)123-4567",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
+    YOUR_EMAIL: "podila.edu@gmail.com",
+    YOUR_FONE: "(562) 350-7695",
+    description: "Feel free to reach out for opportunities, collaborations, or just to connect!",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-    YOUR_SERVICE_ID: "service_id",
-    YOUR_TEMPLATE_ID: "template_id",
-    YOUR_USER_ID: "user_id",
+    YOUR_SERVICE_ID: "",
+    YOUR_TEMPLATE_ID: "",
+    YOUR_USER_ID: "",
 };
 
 const socialprofils = {
-    github: "https://github.com",
-    facebook: "https://facebook.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
+    github: "https://github.com/yourhandle",
+    facebook: "",
+    linkedin: "https://www.linkedin.com/in/podila-anjali-yadav",
+    twitter: "",
 };
 export {
     meta,

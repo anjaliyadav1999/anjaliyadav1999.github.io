@@ -46,15 +46,20 @@ const Headermain = () => {
                   <li className="menu_item">
                   <Link onClick={handleToggle} to="/contact" className="my-3"> Contact</Link>
                   </li>
+                  <li className="menu_item">
+                  <a onClick={handleToggle} href="/AnjaliPodila.pdf" target="_blank" rel="noopener noreferrer" className="my-3">Resume</a>
+                  </li>
                 </ul>
               </div>
             </div>
           </div>
           <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center position-absolute w-100 p-3">
             <div className="d-flex">
-            <a href={socialprofils.facebook}>Facebook</a>
-            <a href={socialprofils.github}>Github</a>
-            <a href={socialprofils.twitter}>Twitter</a>
+            {Object.entries(socialprofils).filter(([, url]) => Boolean(url)).map(([platform, url]) => (
+              <a key={platform} href={url} target="_blank" rel="noopener noreferrer" className="mr-3">
+                {platform.charAt(0).toUpperCase() + platform.slice(1)}
+              </a>
+            ))}
             </div>
             <p className="copyright m-0">copyright __ {logotext}</p>
           </div>

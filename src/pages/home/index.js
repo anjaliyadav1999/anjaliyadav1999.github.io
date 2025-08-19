@@ -17,7 +17,7 @@ export const Home = () => {
         <div className="intro_sec d-block d-lg-flex align-items-center ">
           <div
             className="h_bg-image order-1 order-lg-2 h-100 "
-            style={{ backgroundImage: `url(${introdata.your_img_url})` }}
+            style={{ backgroundImage: `url(${introdata.your_img_url}), url('https://picsum.photos/1000/1200?grayscale')` }}
           ></div>
           <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
             <div className="align-self-center ">
@@ -55,6 +55,14 @@ export const Home = () => {
                       <div className="ring three"></div>
                     </div>
                   </Link>
+                  <a href="/AnjaliPodila.pdf" target="_blank" rel="noopener noreferrer">
+                    <div id="button_r" className="ac_btn btn">
+                      Resume
+                      <div className="ring one"></div>
+                      <div className="ring two"></div>
+                      <div className="ring three"></div>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
