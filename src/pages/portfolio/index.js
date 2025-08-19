@@ -3,6 +3,7 @@ import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { dataportfolio, meta } from "../../content_option";
+import placeholderImg from "../../assets/images/react-porfolio.png";
 
 export const Portfolio = () => {
   return (
@@ -28,7 +29,7 @@ export const Portfolio = () => {
                   alt="Project screenshot"
                   onError={(e) => {
                     e.target.onerror = null;
-                    e.target.src = "https://picsum.photos/400/300?grayscale";
+                    e.target.src = placeholderImg;
                   }}
                 />
                 <div className="content">
